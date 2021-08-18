@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DocumePure CSS Blog Post Hover Effectnt</title>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    ::wbebkit-scrollbar{
+        width: 4px;
+        color: #c70039;
+        transition: all 0.4s ease;
+    }
+
+::-webkit-scrollbar-thumb{
+    background: #c70039;
+    border-radius: 4px;
+    width: 4px;
+    transition: all 0.4s ease;
+}
+
+::-webkit-scrollbar-track{
+    background: #101010;
+    border-radius: 4px;
+    width: 4px;
+}
+
+html{
+    background: #101010;
+}
+
+
+.blog-header{
+    height: auto;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 45px;
+    font-family: monospace;
+    color: whitesmoke;
+    padding: 10px;
+    padding-bottom: 30px;
+    padding-top: 60px;
+    font-weight: 400;
+}
+
+
+.blog-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.blogs{
+   height: 420px;
+   width: 40%;
+   margin: 20px;
+   border-radius: 8px;
+   position: relative;
+   overflow: hidden;
+}
+
+.blogs .img{
+    height: 80%;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.65S ease;
+    position: relative;
+}
+
+.blog-date{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #c70039;
+    color: whitesmoke;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+    font-family: monospace;
+    padding: 3px;
+    transition: all 0.4s ease;
+    width: 25%;
+    height: auto;
+}
+
+.blogs .img img{
+    height: 100%;
+    width: 100%;
+    transition: all 0.65s ease;
+}
+
+.blog-text{
+    height: 80%;
+    width: 100%;
+    text-align: center;
+    vertical-align: center;
+    font-family: monospace;
+    color: whitesmoke;
+    background-color: #050505;
+    transition: all 0.5s ease;
+}
+
+.blog-text h3{
+    font-size:  28px;
+    font-weight: 500;
+    height: 20%;
+    padding: 20px;
+    letter-spacing: 1px;
+}
+
+
+.blog-text p{
+    font-size:  18px;
+    opacity: 0.9;
+    font-weight: 400;
+    height: 80%;
+    padding: 30px;
+    letter-spacing: 1px;
+}
+
+.blogs a{
+    text-decoration: none; 
+    color: whitesmoke;
+}
+
+
+@media all and (max-width:9000px) and (min-width:1441px){
+    .blogs{
+        height: 420px;
+        width: 30%;
+        margin:auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        position: relative;
+        overflow: hidden;
+    }
+    .blogs .img{
+        width: 100%;
+        height: 80%;
+        overflow: hidden;
+        transform: all 0.65s ease;
+        position: relative;
+    }
+    .blog-date{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: whitesmoke;
+        font-size: 18px;
+        text-align: center;
+        font-weight: 400;
+        font-family: monospace;
+        padding: 3px;
+        width: 25%;
+        height: auto
+    }
+
+    .blogs .img img{
+        height: 100%;
+        width: 100%;
+        transition: all 0.65s ease;   
+    }
+    .blog-text{
+        height: 80%;
+        width: 100%;
+        text-align: center;
+        vertical-align: center;
+        font-family: monospace;
+        color: whitesmoke;
+        background-color: #050505;
+        transition: all 0.5s ease;
+    }
+    .blog-text h3{
+        font-size: 28px;
+        font-weight: 500;
+        height: 20%;
+        padding:20px;
+        letter-spacing: 1px;
+        transition: all 0.5s ease;
+        background: black;
+    }
+
+    .blog-text p{
+        font-size: 18px;
+        opacity: 0.9;
+        font-weight: 400;
+        height: 80%;
+        padding: 30px;
+        letter-spacing: 1px;
+        transition: all 0.5s ease;
+        color: white;
+        transition: all 0.5s ease;
+        background: black;
+    }
+
+    .blogs:hover .img{
+        transform: translateY(-70%);
+    }
+
+    .blogs:hover .blog-text h3{
+        transform: translateY(-70%);
+    }
+    .blogs:hover .blog-text p{
+        transform: translateY(-80%);
+    }
+
+
+}
+
+
+
+</style>
+</head>
+
+<body>
+    <div class="blog-header">
+        <span>My Quotes <span>For Life. </span> </span>
+    </div>
+    <div class="blog-content">
+        <div class="blogs">
+            <a href="#">
+                <div class="img">
+                    <img src="7.jpg" alt="">
+                    <div class="blog-date">18 August, 21</div>
+                </div>
+                <span class="blog-text">
+                    <h3>Hope and God</h3>
+                    <p>God, you  have been so good to me. For my life, activity, love and faith</p>
+                </span>
+            </a>
+        </div>
+
+        <!--===duplicate===-->
+        <div class="blogs">
+            <a href="#">
+                <div class="img">
+                    <img src="8.jpg" alt="">
+                    <div class="blog-date">20 August, 21</div>
+                </div>
+                <span class="blog-text">
+                    <h3>Lihgt</h3>
+                    <p>A bright light shone in my life. it means that God always loves me and doesn't let me walk in the dark.</p>
+                </span>
+            </a>
+        </div>
+        <!--===duplicate===-->
+        <div class="blogs">
+            <a href="#">
+                <div class="img">
+                    <img src="9.jpg" alt="">
+                    <div class="blog-date">22 August, 21</div>
+                </div>
+                <span class="blog-text">
+                    <h3>Optimistic</h3>
+                    <p>Together with God we remain optimistic in building the nation and society as a form of duty for free people in their country</p>
+                </span>
+            </a>
+        </div>
+
+        <!--===duplicate===-->
+        <div class="blogs">
+            <a href="#">
+                <div class="img">
+                    <img src="10.jpg" alt="">
+                    <div class="blog-date">23 August, 21</div>
+                </div>
+                <span class="blog-text">
+                    <h3>Look Forward</h3>
+                    <p>"Success and a good future cannot be achieved just like that, it takes determination and tireless struggle to achieve it".
+
+                        "You need to realize, life is sometimes colored by trials and failures. However, the most important thing is to get back up after you fall".
+                        
+                        "There is no success story in this world where the main character gives up and just let the problems that come".</p>
+                </span>
+            </a>
+        </div>
+
+        <!--===duplicate===-->
+        <div class="blogs">
+            <a href="#">
+                <div class="img">
+                    <img src="11.jpg" alt="">
+                    <div class="blog-date">24 August, 21</div>
+                </div>
+                <span class="blog-text">
+                    <h3>Keep Smile</h3>
+                    <p>People with dimples have a divine role in this universe: smile!" "A winning smile makes us all winners." "A day without a smile is a day without happiness." "Beauty is power; smile is the sword."</p>
+                </span>
+            </a>
+        </div>
+        <!--===duplicate===-->
+        <div class="blogs">
+            <a href="#">
+                <div class="img">
+                    <img src="12.jpg" alt="">
+                    <div class="blog-date">25 August, 21</div>
+                </div>
+                <span class="blog-text">
+                    <h3>Be Grateful</h3>
+                    <p>"The more we are grateful, the more happiness we get". "God, I'm so grateful for being surrounded by people who love and always support me." "Grateful people always adorn their faces with a smile."</p>
+                </span>
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+    
+</body>
+</html>
